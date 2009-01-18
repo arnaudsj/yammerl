@@ -1,6 +1,9 @@
 compile:
 	erl -make
 	(cd lib/erlang-oauth;$(MAKE))
+
+run: compile
+	exec erl -pa ./ebin ./lib/erlang-oauth/ebin -s crypto -s inets -s ssl -noshell -s yammer main -s init stop 
 	
 clean:
 	rm -rf ./ebin/*.*
