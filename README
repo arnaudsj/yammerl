@@ -1,0 +1,16 @@
+This is a work in progress!
+
+For this test to even compile, you will need to create the include file:
+
+src/yammer-api-keys.hrl
+
+and include your API KEY & SECRET provided by Yammer for your app.
+
+For example:
+-define(CONSUMER_KEY, "xxxxxxxxxxxxxxxxxxx").
+-define(CONSUMER_SECRET, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX").
+
+Once created, just run: 
+make run
+
+and you should see the result!
